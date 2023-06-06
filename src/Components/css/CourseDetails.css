@@ -1,0 +1,171 @@
+
+  
+  .courseDetailsContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    /* font-family: 'Teko', sans-serif; */
+  }
+
+  .courseDetailsContainer h1{
+    color: #fafafac9;
+    margin: 20px 0px 10px 0px;
+    font-family: 'Teko', sans-serif;
+  }
+
+  .courseDetailsContainer::before{
+      background: url("../images/Main_Background.jpg") no-repeat center center/cover;
+      position: absolute;
+      z-index: -1;
+      height: 600px;
+      width: 100%;
+      content: "";
+      top:0;
+      left:0;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .course-details {
+    border-radius: 5px;
+    padding: 20px;
+    color: aliceblue;
+    background-color: #000000c9;
+    text-align: center;
+  }
+  
+  .course-details img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .enroll-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .course-details h2{
+    margin: 10px 0px;
+  }
+
+  
+  .course-details p{
+    margin: 10px 0px;
+  }
+
+  .cd1{
+    font-size: 34px;
+  }
+  .cd2 
+  {
+    font-size: 21px;
+  }
+  .cd3
+  {
+    font-size: 21px;
+  }
+  .cd4 
+  {
+    font-size: 21px;
+  }
+  .cd5 
+  {
+    font-size: 16px;
+  }
+
+  .extraSpace
+  {
+  position: absolute;
+  top:50%;
+  left:50%;
+  width: 100%;
+  height: 600px;
+  background-color:#0000007a ;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  }
+  .popup-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    font-family: 'Teko', sans-serif;
+  }
+  
+  .close-btn {
+    width: 20px;
+    height: 19px;
+    background-color: red;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 2px;
+    border: 1px solid black;
+  }
+  
+  .close-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  .popup-form input[type="text"],
+  .popup-form input[type="email"],
+  .popup-form input[type="phone"] {
+    font-family: 'Teko', sans-serif;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px;
+  }
+  
+  .popup-form input[type="text"]:focus,
+  .popup-form input[type="email"]:focus,
+  .popup-form input[type="phone"]:focus {
+    outline: none;
+    border-color: #5c6ac4;
+    box-shadow: 0 0 5px rgba(92, 106, 196, 0.5);
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+
+.close-btn-div{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 15px;
+}
+.form-price-div{
+  margin: 10px;
+  font-family: 'Teko', sans-serif;
+  font-size: 15px;
+}  
+  

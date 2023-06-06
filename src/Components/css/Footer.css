@@ -1,0 +1,11 @@
+#end {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    color: azure;
+    text-align: center;
+    padding: 10px;
+    background-color: #000000d4;
+    height: 40px;
+}

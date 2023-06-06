@@ -1,0 +1,259 @@
+
+.teaching{
+  height: 877px;
+}
+
+.teaching-primary{
+  position: relative;
+  font-family: 'SuisseWorks','Georgia,Times','Times New Roman',serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  display: flex;
+  flex-wrap: wrap;
+}
+.teaching-primary1
+{
+  width: 600px;
+  height: 500px;
+  position: relative;
+}
+.teaching-primary2
+{
+  width: 680px;
+  height: 500px;
+  position: relative;
+}
+
+.teaching-primary::before{
+  position: absolute;
+  content: "";
+  left: 0;
+  background-color: #dfe1e0d9;
+  height: 505px;
+  width: 100%;
+  background-size: 114%;
+  z-index: -1;
+}
+
+.teaching-box-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Teko', sans-serif;
+  }
+  
+  .teaching-box-button:hover {
+    background-color: #424242;
+  }
+  
+  .teaching-primary-box
+  {
+    height: 300px;
+    width: 350px;
+    position: absolute;
+    left: 114px;
+    top: 125px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .teaching-primary-box  h1{
+    text-align: left;
+    font-size: 55px;
+  }
+  .teaching-primary-box  p{
+    text-align: left;
+    font-size: 23px;
+    margin: 10px 0px;
+
+  }
+
+  .teaching-primary-img-div{
+    /* position: absolute;
+    top: 30px;
+    left: 750px; */
+  }
+
+
+  .teaching-secondary{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+ 
+  }
+
+  .teaching-secondary h1
+  {
+    font-family: 'SuisseWorks','Georgia,Times','Times New Roman',serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    font-size: 36px;
+    margin: 20px 0px 30px 0px;
+  }
+  
+  .reasons-box
+  {
+    display: flex;
+  }
+
+  .reason{
+    height: 200px;
+    width: 300px;
+    margin: 0px 75px;
+    
+  }
+  .reason h2{
+    font-size: 20px;
+    font-family: 'Udemy Sans','Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+   
+  }
+
+  .reason p{
+    font-family: 'Udemy Sans','Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  }
+
+
+  .teaching-form
+  {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* height: 500px; */
+    width: 500px;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    /* border-radius: 15px; */
+    background-color: #cfcfcfed;
+    z-index: 1;
+  }
+
+
+
+  #heading{
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    color: #fafafac9;
+    
+}
+
+.myinput-tf {
+    margin: 12px 5px;
+    padding: 6px;
+    border: 1px solid black;
+    /* border-radius: 7px; */
+    font-size: 16px;
+    background-color: #ffffff30;
+    outline: none;
+    font-family: 'Teko', sans-serif;
+    text-shadow: 1px 1px 5px white;
+    resize: none;
+    box-shadow: 2px 2px 4px #939090;
+}
+
+.myinput-tf::placeholder
+{
+    color: rgba(46, 44, 44, 0.719);
+    text-shadow: 0 0 5px white ;
+}
+.myinput-radio-tf
+{
+    margin: 12px 5px;
+    padding: 6px 10px 6px 6px;
+    font-size: 16px;
+    display: flex;
+    /* background-color: #05050530; */
+    outline: none;
+    font-family: 'Teko', sans-serif;
+}
+.rb2
+{
+    margin-left: 10px;
+}
+.rb
+{
+    width: 15px;
+    height: 15px;
+}
+
+.error-message-tf {
+  color: red;
+    font-size: 14px;
+    font-weight: bold;
+    background: white;
+    /* border-radius: 4px; */
+    width: 97%;
+    margin: 0px auto;
+}
+
+.teaching-form-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 915px;
+  background-color: #00000082;
+}
+
+.close-btn-div-tf {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 15px;
+}
+
+.close-btn-tf {
+  width: 20px;
+  height: 19px;
+  background-color: red;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
+.tf-heading{
+  /* font-family: 'Teko', sans-serif; */
+  font-size: 34px;
+  font-family: 'SuisseWorks','Georgia,Times','Times New Roman',serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+}
+
+.cvUpload{
+  font-family: 'Teko', sans-serif;
+  display: flex;
+  margin-left: 10px;
+}
+.tf-note
+{
+  font-family: 'Teko', sans-serif;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.tf-form-btn
+{
+  display: inline-block;
+    padding: 10px 20px;
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Teko', sans-serif;
+    margin: 0px auto;
+    width: 75%;
+
+  }
+  
+  .tf-form-btn:hover {
+    background-color: #424242;
+  }

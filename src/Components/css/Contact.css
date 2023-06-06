@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@600;700&display=swap');
+
+.mainContactDiv
+{
+    height: 685px;
+}
+
+.mainContactDiv::before
+{
+    position: absolute;
+    content: "";
+    background: url("../images/Main_Background.jpg") no-repeat center center/cover;
+    /* height: 488px; */
+    height: 719px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* opacity: 0.8; */
+}
+
+#detailsContainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    height: 580px;
+    padding: 15px;
+    /* border-radius: 15px; */
+    background-color: #0000005c;
+    font-family: 'Teko', sans-serif;
+}
+
+#heading{
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    color: #fafafac9;
+    
+}
+
+.myinput {
+    margin: 12px 5px;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: #ffffff30;
+    outline: none;
+    font-family: 'Teko', sans-serif;
+    text-shadow: 1px 1px 5px white;
+    resize: none;
+}
+
+.myinput::placeholder
+{
+    color: rgba(46, 44, 44, 0.719);
+    text-shadow: 0 0 5px white ;
+}
+.myinput-radio
+{
+    margin: 12px 5px;
+    padding: 6px 10px 6px6px;
+    font-size: 16px;
+    display: flex;
+    /* background-color: #05050530; */
+    outline: none;
+    font-family: 'Teko', sans-serif;
+}
+.rb2
+{
+    margin-left: 10px;
+}
+.rb
+{
+    width: 15px;
+    height: 15px;
+}
+#btn {
+    font-family: 'Teko', sans-serif;
+    margin: auto;
+    width: 52%;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    font-size: 19px;
+    border-radius: 10px;
+    padding: 5px 8px;
+    cursor: pointer;
+    color: white;
+    background-color: #161313c4;
+}
+#btn:hover
+{
+    background-color: #665f5fcf;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    background: antiquewhite;
+    border-radius: 4px;
+    width: 98%;
+    margin: auto;
+  }
+  
+  .error-message::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    transform: rotate(45deg);
+    top: -5px;
+    left: 50%;
+    margin-left: -5px;
+  }

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    display: flex;
+    padding: 9px 10px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    z-index: 5;
+    position: relative;
+}
+
+#logo {
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: black;
+
+}
+
+#logo a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo:hover {
+    background-color: #ffffff;
+    /* color: black; */
+}
+
+#logo:hover+#logo p {
+    color: black;
+}
+
+#logo a:hover {
+    color: black;
+}
+
+#logo img {
+    width: 70px;
+    height: 70px;
+    position: sticky;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 10px 0;
+    flex-direction: row;
+    list-style: none;
+    margin: auto;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    margin: 3px 3px;
+    color: white;
+    padding: 2px 5px;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+
+}
+.cartopt img
+{
+    height: 50px;
+    width: 50px;
+}
+.service-button {
+    cursor: pointer;
+}
+
+.list-1 li {
+    margin: 3px 6px;
+}
+
+.list-2 li {
+    margin: 3px 6px;
+}
+
+#navbar-option {
+    display: flex;
+    margin: auto;
+
+}
+
+.servicemenu {
+    display: none;
+}
+
+#navbar ul li:hover .servicemenu {
+    display: block;
+    position: absolute;
+    margin-left: -15px;
+}
+
+#navbar ul li:hover .servicemenu ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#navbar ul li:hover .servicemenu ul li {
+    border-bottom: 1px dotted gray;
+    text-align: left;
+}
+
+.servicemenu {
+    background-color: black;
+    border-radius: 5px;
+}
+.LogoutButton
+{
+    margin: 13px 33px 0px 0px;
+    position: absolute;
+    right: 10px;
+}
+
+.LogoutButton a {
+    text-decoration: none;
+    margin: 3px 3px;
+    color: black;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.LogoutButton a:hover {
+    background-color:rgb(178, 179, 179) ;
+    color: black;
+    border-radius: 6px;
+
+}
