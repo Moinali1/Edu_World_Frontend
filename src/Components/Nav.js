@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import './css/Nav.css';
 
 const Nav=(props)=>{
+
+ 
+
     return (<nav id="navbar">
         <div id="logo">
         <Link to="/about#secondary"> 
@@ -19,7 +22,7 @@ const Nav=(props)=>{
               <ul> 
                 <li><Link to="/courses">Courses</Link></li>
                 <li><Link to="/teaching">Join Us</Link></li>
-                <li ><Link to="/about/#location">Service Location</Link></li>
+                <li ><Link to="/aboutlocation">Service Location</Link></li>
               </ul>
             </div>
           </li>

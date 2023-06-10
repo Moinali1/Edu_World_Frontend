@@ -10,7 +10,7 @@ const ContactPrimary=()=>{
 }
 
 const ContactForm=()=>{
-    const [username,setUserName]=useState();
+    const [username,setUserName]=useState('');
     const [phone,setPhone]=useState('');
     const [isVaildPhone,setIsValidPhone]=useState(true);
     const [email,setEmail]=useState('');
@@ -154,8 +154,8 @@ onChange={handleUserName}
 </div>
 
 
-<select className="myinput" id="Course-list" name="course" onChange={(e)=>setCourse(e.target.value)} > 
-<option className="opt" value="0" disabled="disabled" selected >Select an option (Optional)</option>
+<select className="myinput" id="Course-list" name="course" value="0"  onChange={(e)=>setCourse(e.target.value)} > 
+<option className="opt" value="0" disabled="disabled"  >Select an option (Optional)</option>
 <option className="opt" value="System Analysis">System Analysis </option>
 <option className="opt" value="Business Analytic">Business Analytic</option>
 <option className="opt" value="Artificial Intelligence">Artificial Intelligence</option>

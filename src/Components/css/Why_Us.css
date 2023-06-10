@@ -2,7 +2,7 @@
 #introsection {
     /* background-color: yellow; */
     /* position: relative; */
-    height: 360px;
+    height: 365px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +43,7 @@
 
 #missionsection {
     width: 100%;
-    height: 269px;
+    height: 315px;
 }
 
 #missionbox {
@@ -56,13 +56,14 @@
 }
 
 #item {
-    /* border: 1px solid black; */
-    border-radius: 25px;
+       /* border: 1px solid black; */
+    /* border-radius: 25px; */
     padding: 13px 20px;
     margin: 5px 9px;
     width: 33%;
-    text-shadow: 0 0 5px #ffffff;
-    background-color: #efececb3;
+    color: aliceblue;
+    /* text-shadow: 0 0 5px #ffffff; */
+    background-color: #0000003d;
 
 }
 
@@ -85,13 +86,14 @@
 #missionsection::before {
     content: "";
     position: absolute;
-    background: #c5c2c2 no-repeat center center/cover;
-    height: 269px;
+    background: #585858 no-repeat center center/cover;
+    height: 315px;
     width: 100%;
     left: 0;
     z-index: -1;
     opacity: 0.9;
 }
+
 
 #missionsection h2 {
     color: white;
@@ -107,23 +109,21 @@
 }
 
 #sponsorsection {
-
     background-color: #e5dcdca8;
-    height: 199px;
+    height: 330px;
 }
 
 #sponsorsection h3 {
 
-    color: white;
+    color: black;
     font-family: 'Teko', sans-serif;
-    /* font-size: 14px; */
-    background-color: #16131396;
+    background-color: #6d6d6d96;
     padding: 0px 31px;
-    /* border-radius: 41px; */
     padding: 9px;
     font-size: 22px;
     text-align: center;
     z-index: 1;
+
 }
 
 footer {
@@ -136,16 +136,19 @@ footer {
     margin: auto;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .sp {
-    margin: 10px 20px;
+    margin: 20px 40px;
 }
 
 #end {
     color: azure;
     text-align: center;
     padding: 10px;
+    font-family: 'Kanit';
 }
 
 
@@ -177,3 +180,19 @@ footer {
 }
 
 
+.why-us{
+    height: 1000px;
+    width: 100%;
+}
+.img2{
+    height: 62px;
+}
+
+.img5{
+margin-bottom:55px;
+}
+
+.sponsors1
+{
+    margin-top: 15px;
+}

@@ -17,15 +17,15 @@ const Mission=()=>{
         <div id="missionbox">
           <div id="item">
             <h3>Quality Education</h3>
-            <p>this is mission item  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iusto iure velit dolorum ipsa facilis ab impedit odit? Nemo dignissimoslore Lorem ipsum, dolor sit amet consectetur</p>
+            <p> Quality education lays the foundation for knowledge and skills necessary for personal and professional growth. It encompasses well-designed curriculum, competent teachers, effective learning methods, and access to resources, ensuring students receive a comprehensive and valuable learning experience</p>
           </div>
           <div id="item">
             <h3>Build Confidence</h3>
-            <p>this is mission item Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iusto iure velit dolorum ipsa facilis ab impedit odit? Nemo dignissimoslore Lorem ipsum, dolor sit amet consectetur</p>
+            <p>Building confidence is essential for personal growth and success. It involves overcoming challenges, embracing failure, and believing in oneself. By developing resilience, positive self-talk, and a growth mindset, individuals can enhance their confidence and achieve their goals with greater determination and self-assurance..</p>
           </div>
           <div id="item">
             <h3>Practical Knowledge</h3>
-            <p>this is mission item  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iusto iure velit dolorum ipsa facilis ab impedit odit? Nemo dignissimos  lore Lorem ipsum, dolor sit amet consectetur    </p>
+            <p>Practical education emphasizes hands-on learning experiences that bridge theory and real-world application. By engaging in practical activities, such as experiments, simulations, or projects, students gain valuable skills, problem-solving abilities, and a deeper understanding of how knowledge can be applied in practical contexts.</p>
           </div>
         </div>
       </section>
@@ -35,20 +35,24 @@ const Mission=()=>{
 const Sponsor=()=>{
  return (
     <section id="sponsorsection"> 
-      <h3>Our Collaboration</h3>
+      <h3>Our Collaborations</h3>
       <div id="sponsors">
+      <div className="sponsors1">
       <img className="img2 sp" src={require("./images/sp2.png")} alt=""/>
-      <img className="img3 sp" src={require("./images/sp3.png")} alt=""/>
       <img className="img1 sp" src={require("./images/sp6.png")}  alt=""/>
+      <img className="img3 sp" src={require("./images/sp3.png")} alt=""/>
+      </div>
+      <div className="sponsors2">
       <img className="img5 sp" src={require("./images/sp5.png")} alt=""/>
       <img className="img4 sp" src={require("./images/sp4.png")} alt=""/></div>
+      </div>
     </section>
  )   
 }   
 
 const Why_Us=()=>{
     return (
-        <div>
+        <div className="why-us">
             <Intro />
             <Mission />
             <Sponsor />

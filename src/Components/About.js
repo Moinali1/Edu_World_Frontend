@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import './css/About.css';
 
 const AboutPrimary=()=>{
@@ -55,8 +55,10 @@ const AboutDanger=()=>{
     )
 }
 const AboutLocations=(props)=>{
+    
+
     return(
-        <section id={'location'} ref={props.refe}> 
+        <section id={'location'} ref={props.secRef}> 
         <div className="lochead">Institute Locations</div>
         <div className="loc1">
           <div id="line"></div>
@@ -96,13 +98,19 @@ const AboutLocations=(props)=>{
 }
 
 function About(props){
+  const sectionRef=useRef(null);
 
-    if(props.scrolltolocation=="TRUE")
-    {
-      console.log("function run")
-      props.scrollFunction();
+    const scrollToSection = () => {
+      sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
 
-    }
+    useEffect(()=>{
+    console.log(props.locationScroll)
+      if(props.locationScroll==true)
+      {
+        scrollToSection();
+      }
+    })
 
     return(
         <div className="about">
@@ -110,7 +118,7 @@ function About(props){
         <AboutSecondary />
         <AboutTernary />
         <AboutDanger />
-        <AboutLocations refe={props.reference} name='locations'/>
+        <AboutLocations secRef={sectionRef} name='locations'/>
         </div>
     )
 }

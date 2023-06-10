@@ -182,6 +182,10 @@ function Signin(props){
       
 
     return (<div className="container">
+      <div id="signin-logo">
+        <img src={require('./images/logo.png')} alt=""/>
+        <p>Edu World</p>
+      </div>
       <div className="form-box">
         <h1 id="title">Sign Up </h1>
 

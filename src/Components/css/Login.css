@@ -116,3 +116,21 @@ form p a {
   color: #3c00a0;
   cursor: pointer;
 }
+
+#signin-logo{
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 20px;
+    color: #eaeaea;
+    background-color: rgba(0, 0, 0, 0.723);
+}
+
+#signin-logo img {
+    width: 70px;
+    height: 70px;
+    position: sticky;
+}

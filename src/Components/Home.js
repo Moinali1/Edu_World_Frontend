@@ -28,7 +28,7 @@ const HomePrimary=()=>{
         </div>
         <div id="wuprimary2"> 
           <div className="wu-image1"> 
-          <img src={require("./images/PrimaryImg1.png")} alt="" srcset=""/>
+          <img src={require("./images/PrimaryImg1.png")} alt=""/>
           </div>
           <div className="wuprimary22"> 
             <div className="wup1">COURSE LIBRARY</div>
@@ -58,7 +58,7 @@ const HomePrimary=()=>{
 }
 
 const HomeSeeThis=()=>{
-
+  const d= new Date();
     return(
         <section id="wusecondary"> 
         <div id="wuseconadry1">
@@ -112,7 +112,7 @@ const HomeSeeThis=()=>{
             </div>
           </div>
           <div>
-            <div className="box0">TechValidate Survey, 2022</div>
+            <div className="box0">TechValidate Survey, {d.getFullYear()}</div>
           </div>
         </div>
       </section>
@@ -120,6 +120,7 @@ const HomeSeeThis=()=>{
 }
 
 const Home=()=>{
+  
     return(
         <div>
             <HomePrimaryContainer />

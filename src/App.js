@@ -10,7 +10,7 @@ import Contact from './Components/Contact';
 import CourseDetails from './Components/CourseDetails';
 import Why_Us from './Components/Why_Us';
 import Teaching from './Components/Teaching';
-import {BrowserRouter,Routes,Route, Outlet} from 'react-router-dom';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import PrivateComponent from './Components/PrivateComponent';
 import { useEffect, useState } from 'react';
 
@@ -35,11 +35,6 @@ function App() {
     // console.log(joinCourse)
   });//rendering multiple time
 
-  const sectionRef = useRef(null);
-
-  const scrollToSection = () => {
-    sectionRef.current.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <div className="App">
@@ -50,9 +45,9 @@ function App() {
 
       <Route element={<PrivateComponent />}>
       <Route path="/" element={<Home />}/>
-      <Route path="/about" element={<About scrolltolocation="FALSE"/>}/>
+      <Route path="/about" element={<About locationScroll={false}/>}/>
       <Route path="/courses" element={<Courses setJoinCourse={setJoinCourse} />}/>
-      {/* <Route path="/about#location" Component={<About scrolltolocation="TRUE" scrollFunction={scrollToSection} reference={sectionRef}/>}/> */}
+      <Route path="/aboutlocation" element={<About locationScroll={true}/>}/>
       <Route path="/contact" element={<Contact />}/>
       <Route path="/join" element={<CourseDetails courseName={localStorage.getItem('courseSelected')} />}/>
       <Route path="/why-us" element={<Why_Us />}/>
