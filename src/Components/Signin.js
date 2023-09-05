@@ -160,7 +160,7 @@ function Signin(props){
         document.getElementById("option1").style.display="none"; 
         document.getElementById("option2").style.display="block";
         document.getElementById("nameField").style.maxHeight="0";
-        document.getElementById("nameField").style.padding="0";
+        // document.getElementById("nameField").style.padding="0";
         document.getElementById("title").innerHTML="Sign In";
       
         document.getElementById("signinbtn").style.height="40px";
@@ -172,7 +172,7 @@ function Signin(props){
         document.getElementById("option1").style.display="block"; 
         document.getElementById("option2").style.display="none"; 
         document.getElementById("nameField").style.maxHeight="65px";
-        document.getElementById("nameField").style.padding="18px 15px";
+        // document.getElementById("nameField").style.padding="18px 15px";
         document.getElementById("title").innerHTML="Sign Up";
       
         document.getElementById("signinbtn").style.height="0";

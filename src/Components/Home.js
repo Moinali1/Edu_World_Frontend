@@ -10,8 +10,8 @@ const HomePrimaryContainer=()=>{
         <section id="wucontainer">
         <div id="wucontainer1">
           <div className={classNames("c1","item")}>Where technology teams build better skills, faster</div>
-          <div className={classNames("c2","item")}> Technology teams are only as successful as their skills are relevant. With access to expert-authored courses and content, skill assessments and analytics, Pluralsight Skills gives you the most effective path to building business-critical skills.</div><Link to="/courses">    
-            <div className="container-btn item">Join Now</div></Link>
+          <div className={classNames("c2","item")}> Technology teams are only as successful as their skills are relevant. With access to expert-authored courses and content, skill assessments and analytics, Pluralsight Skills gives you the most effective path to building business-critical skills.</div>  
+            <div className="container-btn item"><Link to="/courses">Join Now</Link></div>
         </div>
       </section>
     )
@@ -32,7 +32,7 @@ const HomePrimary=()=>{
           </div>
           <div className="wuprimary22"> 
             <div className="wup1">COURSE LIBRARY</div>
-            <div className="wup2">Feel confident your team is learning from the industry’s best         </div>
+            <div className="wup2">Feel confident your team is learning from the industry’s best </div>
             <div className="wup3">Upskill your team with courses on the most in-demand technology topics, taught by the experts who know them best. </div>
             <div className="wup4">
               <div className="wup41 wup-list-box">

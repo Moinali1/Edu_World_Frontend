@@ -31,11 +31,20 @@
     padding: 10px 10px 10px 10px;
     width: 45%;
     margin-left: 57px;
+
+    @media (max-width:1128px) {
+        width: auto;
+    }
+    
 }
 
 .c1 {
     font-size: 39px;
     font-family: 'Kanit', sans-serif;
+
+    @media (max-width:1128px) {
+        text-align: center;
+    }
 }
 
 .c2 {
@@ -44,6 +53,10 @@
     font-weight: 400;
     font-size: 14px;
     text-align: left;
+
+    @media (max-width:1128px) {
+        text-align: center;
+    }
 
 }
 
@@ -54,6 +67,16 @@
     width: 114px;
     cursor: pointer;
     font-family: auto;
+
+    @media (max-width:1128px) {
+        margin: auto;
+        width: 200px;
+    }
+
+}
+.container-btn a{
+    text-decoration: none;
+    color: white;
 }
 
 .container-btn:active {
@@ -119,6 +142,10 @@
 
     display: flex;
 
+    @media (max-width:1030px) {
+        flex-direction: column;
+    }
+
 }
 
 .wu-image1 {
@@ -126,6 +153,10 @@
     width: fit-content;
     padding: 20px;
     margin-left: 11px;
+
+    @media (max-width:1030px) {
+        margin: auto;
+    }
 }
 
 #wuprimary2 {
@@ -139,12 +170,24 @@
     width: 55%;
     padding: 15px;
     margin-left: 25px;
+    @media (max-width:1030px) { 
+        margin: auto;
+        width: auto;
+    }
     
 }
 
 .wup4 {
     display: flex;
     padding: 5px;
+
+    @media (max-width:1030px) {
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
 
 .wup-list-box {
