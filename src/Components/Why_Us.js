@@ -4,8 +4,8 @@ import './css/Why_Us.css';
 const Intro=()=>{
  return (
     <section id="introsection"> 
-    <div className="d1">Welcome to the best Learning Platform! </div>
-    <div className="d2">Here its Moon</div>
+    <div className="introD1">Testimonial </div>
+    <div className="introD2">Building Belives</div>
   </section>
  )   
 }
@@ -35,7 +35,7 @@ const Mission=()=>{
 const Sponsor=()=>{
  return (
     <section id="sponsorsection"> 
-      <h3>Our Collaborations</h3>
+      <h3>Education Partners</h3>
       <div id="sponsors">
       <div className="sponsors1">
       <img className="img2 sp" src={require("./images/sp2.png")} alt=""/>

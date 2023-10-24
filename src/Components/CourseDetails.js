@@ -144,36 +144,34 @@ const CourseDetails=(props)=>{
               <p className="cd5">Description: {courseDetails.description}</p>
               <button className="enroll-btn" onClick={handleEnrollBtn}>Enroll Now</button>
             </div>
-            {isFormVisible && (
-            <div className="extraSpace">
-            <div className="popup-form">
-            <div className="close-btn-div">
-            <button className="close-btn" onClick={() => setIsFormVisible(false)}>
-             x
-            </button>
-            </div>
-            <h2>Register Here</h2>
-            <input type="text" name="name" value={name} placeholder="Name" onChange={(e)=>{setName(e.target.value)}}/>
-            <input type="email" name="email" value={email} placeholder="Email" onChange={handleEmailChange} onBlur={validateEmail}/>
-            {!isVaildEmail && (
-              <div className="error-message">
-               Please enter a valid Email
-              </div>
-            )}
-            
-            <input type="phone" name="phone" value={phone} placeholder="Phone" onChange={handlePhoneChange} onBlur={validatePhone}/>
-            {!isVaildPhone && (
-              <div className="error-message">
-               Please enter a valid Phone Number
-               </div>
-            )}
-            <div className="form-price-div">Course Price : ${courseDetails.price}</div>
-            <button className="submit-btn" type="submit" onClick={submitEnrollDetails}>Proceed</button>
-            <h5>Note: name entered here will be reflected on the certificate</h5>
-            </div>
-            </div>
-              )}
-          </div>
+                    {isFormVisible && (
+                        <div className="extraSpace">
+                          <div className="popup-form">
+                          <div className="close-btn-div">
+                          <button className="close-btn" onClick={() => setIsFormVisible(false)}>x</button>
+                          </div>
+                          <h2>Register Here</h2>
+                          <input type="text" name="name" value={name} placeholder="Name" onChange={(e)=>{setName(e.target.value)}}/>
+                          <input type="email" name="email" value={email} placeholder="Email" onChange={handleEmailChange} onBlur={validateEmail}/>
+                          {!isVaildEmail && (
+                            <div className="error-message">
+                            Please enter a valid Email
+                            </div>
+                          )}
+                          
+                          <input type="phone" name="phone" value={phone} placeholder="Phone" onChange={handlePhoneChange} onBlur={validatePhone}/>
+                              {!isVaildPhone && (
+                                <div className="error-message">
+                                Please enter a valid Phone Number
+                                </div>
+                              )}
+                          <div className="form-price-div">Course Price : ${courseDetails.price}</div>
+                          <button className="submit-btn" type="submit" onClick={submitEnrollDetails}>Proceed</button>
+                          <h5>Note: name entered here will be reflected on the certificate</h5>
+                          </div>
+                        </div>
+                     )}
+           </div>
     )
 }
 

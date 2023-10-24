@@ -39,60 +39,55 @@ function Signin(props){
 
 
     const collectSignInData=async ()=>{
-      if(name=="")
-      {
-        alert("Enter the name");
-        return;
-      }
-      if(password.length<=7)
-      {
-        alert("Password length must be greater then 7");
-        return;
-      }
-
-      if(name!="" && isVaildEmail==true && email.length>0 && password.length>7)
-      {
-
-
-
-      try{
-      let result= await fetch('https://edu-world-backend.vercel.app/register',{
-        method:'post',
-        body: JSON.stringify({name,email,password}),
-        headers:{
-          'Content-Type':'application/json'
+        if(name=="")
+        {
+          alert("Enter the name");
+          return;
         }
-      });
+        if(password.length<=7)
+        {
+          alert("Password length must be greater then 7");
+          return;
+        }
 
-      result=await result.json();
-      console.log(result.response);
-      // console.log(typeof(result.response))
-      
-      // let json= JSON.stringify(result);
-      // console.log((json[0]));
-      // console.log(typeof(json));
-      if(result.response==="1")
-      {
-        alert("Registration Done!, Try to SignIn")
-      }
-      else if(result.response==="2")
-      {
-        alert("Email already exist");
-      }
-      else{//response==500
-        alert("Error in database operation for /register");
-      }
-    }
-    catch{
-      alert("server not responding");
-    }
-    }
+        if(name!="" && isVaildEmail==true && email.length>0 && password.length>7)
+        {
+            try{
+                let result= await fetch('https://edu-world-backend.vercel.app/register',{
+                method:'post',
+                body: JSON.stringify({name,email,password}),
+                headers:{
+                'Content-Type':'application/json'
+              }
+            });
 
-
-    else
-    {
-      alert("Enter the proper details");
-    }
+              result=await result.json();
+              console.log(result.response);
+              // console.log(typeof(result.response))
+              
+              // let json= JSON.stringify(result);
+              // console.log((json[0]));
+              // console.log(typeof(json));
+              if(result.response==="1")
+              {
+                alert("Registration Done!, Try to SignIn")
+              }
+              else if(result.response==="2")
+              {
+                alert("Email already exist");
+              }
+              else{//response==500
+                alert("Error in database operation for /register");
+              }
+            }
+            catch{
+              alert("server not responding");
+          }
+          }
+        else
+        {
+          alert("Enter the proper details");
+        }
     }
 
     const verifyDetails= async ()=>{
@@ -110,44 +105,42 @@ function Signin(props){
 
       try{
 
-      const requestBody={
-        email:email.toLocaleLowerCase(),
-        password:password
-      }  
+          const requestBody={
+            email:email.toLowerCase(),
+            password:password
+          }  
 
-      let result= await fetch('https://edu-world-backend.vercel.app/',{
-        method:'post',
-        body: JSON.stringify({requestBody}),
-        headers:{
-          'Content-Type':'application/json'
-        }
-      });
-      let json= await result.json();
-      if(json.response=="1")
-      {
-        let username=json.name;
-        localStorage.setItem("user",JSON.stringify({username,email}));
-        props.setLoginState(true);
-        navigate("/");
-      }
-      else if(json.response=="2")
-      {
-        alert("Details not matched");
-      }
-      else if(json.response=="3")
-      {
-        alert("Email not registered, SignUp first");
-      }
-      else{
-        alert("Error in database operation for /");
-      }
-
+          let result= await fetch('https://edu-world-backend.vercel.app/',{
+            method:'post',
+            body: JSON.stringify({requestBody}),
+            headers:{
+              'Content-Type':'application/json'
+            }
+          });
+          let json= await result.json();
+          if(json.response=="1")
+          {
+            let username=json.name;
+            localStorage.setItem("user",JSON.stringify({username,email}));
+            props.setLoginState(true);
+            navigate("/");
+          }
+          else if(json.response=="2")
+          {
+            alert("Details not matched");
+          }
+          else if(json.response=="3")
+          {
+            alert("Email not registered, SignUp first");
+          }
+          else{
+            alert("Error in database operation for /");
+          }
     }
     catch
-    {
-      alert("server not responding");
-    }
-
+        {
+          alert("server not responding");
+        }
     }
 
     useEffect(() => {
@@ -221,9 +214,8 @@ function Signin(props){
 
             <div className="btn-field">
               <button id="signupbtn" type="submit" onClick={collectSignInData}>Sign Up </button>
-              <button id="signinbtn" type="submit" onClick={verifyDetails}>Sign In </button>
+              <button id="signinbtn" type="submit" onClick={verifyDetails}>Sign In</button>
             </div>
-
 
           </div>
       </div>

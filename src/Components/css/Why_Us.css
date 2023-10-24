@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Noto+Sans&display=swap');
 
 #introsection {
     /* background-color: yellow; */
@@ -7,39 +8,72 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Teko', sans-serif;
+    /* font-family: 'Teko', sans-serif; */
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../images/Main_Background.jpg") no-repeat center center;
+    background-size: cover;
+    
 }
 
-#introsection div.d1 {
-    color: white;
+#introsection div.introD1 {
+    /* color: white;
     font-size: 40px;
-    background-color: #161313a8;
+    background-color: #16131300;
     padding: 0px 31px;
     border-radius: 41px;
+    font-family: 'Jost', sans-serif; */
+
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-size: 70px;
+    background-color: #16131300;
+    /* padding: 0px 2px; */
+    /* border-radius: 41px; */
+    font-family: 'Jost', sans-serif;
 }
 
-#introsection div.d2 {
+#introsection div.introD2 {
     color: white;
-    font-size: 14px;
-    background-color: #161313a8;
+    font-size: 20px;
+    /* background-color: #161313a8; */
+    text-shadow: 5px 5px 5px black;
     padding: 0px 31px;
     border-radius: 41px;
     margin-top: 2px;
+    font-family: 'Jost', sans-serif;
 }
 
-#introsection::before {
+
+/* #introsection::before {
     position: absolute;
     content: "";
     background: url("../images/Main_Background.jpg") no-repeat center center/cover;
-    /* height: 488px; */
     height: 438px;
     width: 100%;
     top: 0;
     left: 0;
     z-index: -1;
-    /* opacity: 0.8; */
+} */
+
+#introsection::after {
+    /* bottom: 0; */
+    /* content: "";
+    background: url("../images/overlay-bottom.png") bottom center no-repeat;
+    height: 46px;
+    width: 100%;
+    background-size: cover; */
+
+    /* bottom: 0; */
+    position: absolute;
+    content: "";
+    background: url("../images/overlay-bottom.png") bottom center no-repeat;
+    left: 0;
+    bottom: 205px;
+    width: 100%;
+    height: 46px;
+    background-size: cover;
 
 }
+
 
 #missionsection {
     width: 100%;
@@ -57,11 +91,11 @@
 
 #item {
        /* border: 1px solid black; */
-    /* border-radius: 25px; */
+    border-radius: 25px;
     padding: 13px 20px;
     margin: 5px 9px;
     width: 33%;
-    color: aliceblue;
+    color: black;
     /* text-shadow: 0 0 5px #ffffff; */
     background-color: #0000003d;
 
@@ -86,7 +120,7 @@
 #missionsection::before {
     content: "";
     position: absolute;
-    background: #585858 no-repeat center center/cover;
+    background: #ffff no-repeat center center/cover;
     height: 315px;
     width: 100%;
     left: 0;
@@ -117,7 +151,7 @@
 
     color: black;
     font-family: 'Teko', sans-serif;
-    background-color: #6d6d6d96;
+    background-color:#6d6d6d52;
     padding: 0px 31px;
     padding: 9px;
     font-size: 22px;

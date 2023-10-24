@@ -16,7 +16,7 @@
       background: url("../images/Main_Background.jpg") no-repeat center center/cover;
       position: absolute;
       z-index: -1;
-      height: 600px;
+      height: 100%;
       width: 100%;
       content: "";
       top:0;
